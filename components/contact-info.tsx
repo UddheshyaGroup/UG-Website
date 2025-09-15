@@ -12,20 +12,20 @@ export default function ContactInfo() {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: ["+977 9860471053", "+977 9841325099"],
+      details: ["+977 9805533600", "+977 9805533602"],
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      details: ["uddheshyastudio@gmail.com", "info@uddheshyastudio.com"],
+      details: ["uddheshyastudio@gmail.com", "info@uddheshyagroup.com"],
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
       title: "Business Hours",
       details: [
-        "Monday - Friday: 9am - 5pm",
+        "Sunday - Thursday: 9AM - 5PM",
+        "Friday: 9AM - 2PM",
         "Saturday: Closed",
-        "Sunday: Closed",
       ],
     },
   ];
