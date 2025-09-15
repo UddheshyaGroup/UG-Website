@@ -1,30 +1,5 @@
-# Uddheshya Group website
+Uddheshya Group Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+This repository contains the official website of Uddheshya Group, which showcases the company’s profile, services, and other related information. The website is designed to provide a smooth and responsive user experience using modern web development technologies. To run this website locally, first clone the repository to your machine. After that, install all the required dependencies by running npm install --legacy-peer-deps. Once the installation is complete, you can start the development server using npm run dev. The website will then be accessible in your browser at http://localhost:3000, allowing you to view and test it locally.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/krishalbasnet87-4120s-projects/v0-uddheshya-group-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/LlYpSkTUCBg)
-
-## Overview
-
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
-
-## Deployment
-
-Your project is live at:
-
-**[https://vercel.com/krishalbasnet87-4120s-projects/v0-uddheshya-group-website](https://vercel.com/krishalbasnet87-4120s-projects/v0-uddheshya-group-website)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/LlYpSkTUCBg](https://v0.dev/chat/projects/LlYpSkTUCBg)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+The Uddheshya Group website serves as an online platform to highlight the company’s services, projects, and updates, as well as to provide contact information for clients and partners. It is built to be easily maintainable and extensible, so you can continue developing and improving the site as needed. The live version of the website is hosted on Vercel and can be accessed here. 
