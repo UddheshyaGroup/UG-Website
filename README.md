@@ -1,4 +1,4 @@
-##Uddheshya Group Website
+## Uddheshya Group Website
 
 This repository contains the official website of Uddheshya Group, which showcases the company’s profile, services, and other related information. The website is designed to provide a smooth and responsive user experience using modern web development technologies. To run this website locally, first clone the repository to your machine. After that, install all the required dependencies by running npm install --legacy-peer-deps. Once the installation is complete, you can start the development server using npm run dev. The website will then be accessible in your browser at http://localhost:3000, allowing you to view and test it locally.
 
