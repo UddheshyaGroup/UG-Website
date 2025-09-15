@@ -5,8 +5,8 @@ import ValuesSection from "@/components/values-section"
 import TimelineSection from "@/components/timeline-section"
 
 export const metadata: Metadata = {
-  title: "About Us | UDDHESHYA STUDIO",
-  description: "Learn about UDDHESHYA STUDIO's journey, mission, values, and the team behind our success.",
+  title: "About Us | UDDHESHYA GROUP",
+  description: "Learn about UDDHESHYA GROUP's journey, mission, values, and the team behind our success.",
 }
 
 export default function AboutPage() {

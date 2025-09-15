@@ -4,7 +4,7 @@ import ServicesGrid from "@/components/services-grid"
 import ServiceProcess from "@/components/service-process"
 
 export const metadata: Metadata = {
-  title: "Services | UDDHESHYA STUDIO",
+  title: "Services | UDDHESHYA GROUP",
   description: "Discover our comprehensive range of marketing services designed to elevate your brand.",
 }
 

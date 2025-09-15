@@ -16,7 +16,7 @@ export default function AboutHero() {
           About Us
         </h1>
         <p className="text-xl text-muted-foreground">
-          UDDHESHYA STUDIO is a forward-thinking marketing agency that combines
+          UDDHESHYA GROUP is a forward-thinking marketing agency that combines
           creativity, data-driven strategies, and cutting-edge technology to
           deliver exceptional results for our clients.
         </p>

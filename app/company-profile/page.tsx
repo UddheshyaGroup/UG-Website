@@ -4,8 +4,8 @@ import CompanyVision from "@/components/company-vision"
 import ClientLogos from "@/components/client-logos"
 
 export const metadata: Metadata = {
-  title: "Company Profile | UDDHESHYA STUDIO",
-  description: "Explore UDDHESHYA STUDIO's company profile, achievements, and vision for the future of marketing.",
+  title: "Company Profile | UDDHESHYA GROUP",
+  description: "Explore UDDHESHYA GROUP's company profile, achievements, and vision for the future of marketing.",
 }
 
 export default function CompanyProfilePage() {
@@ -16,7 +16,7 @@ export default function CompanyProfilePage() {
       </h1>
       <div className="prose prose-lg dark:prose-invert max-w-none mb-16">
         <p className="text-xl text-center max-w-3xl mx-auto">
-          UDDHESHYA STUDIO is a forward-thinking marketing agency that combines creativity, data-driven strategies, and
+          UDDHESHYA GROUP is a forward-thinking marketing agency that combines creativity, data-driven strategies, and
           cutting-edge technology to deliver exceptional results for our clients.
         </p>
       </div>

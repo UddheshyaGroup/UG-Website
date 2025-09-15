@@ -5,7 +5,7 @@ import PortfolioGrid from "@/components/portfolio-grid";
 import PortfolioHero from "@/components/portfolio-hero";
 
 export const metadata: Metadata = {
-  title: "Portfolio | UDDHESHYA STUDIO",
+  title: "Portfolio | UDDHESHYA GROUP",
   description:
     "Explore our portfolio of successful marketing campaigns and projects.",
 };

@@ -4,9 +4,9 @@ import ContactInfo from "@/components/contact-info";
 import Map from "@/components/map";
 
 export const metadata: Metadata = {
-  title: "Contact Us | UDDHESHYA STUDIO",
+  title: "Contact Us | UDDHESHYA GROUP",
   description:
-    "Get in touch with UDDHESHYA STUDIO for innovative marketing solutions tailored to your business needs.",
+    "Get in touch with UDDHESHYA GROUP for innovative marketing solutions tailored to your business needs.",
 };
 
 export default function ContactPage() {

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://uddheshyastudio.com",
+    url: "https://uddheshyagroup.com",
     title: "UDDHESHYA GROUP | Redefining Marketing for the Digital Age",
     description: "Cutting-edge marketing solutions for businesses worldwide",
     siteName: "UDDHESHYA GROUP",

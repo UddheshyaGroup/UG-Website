@@ -9,7 +9,7 @@ export default function TimelineSection() {
       year: "May",
       title: "Company Founded",
       description:
-        "UDDHESHYA STUDIO was founded with a vision to transform digital marketing through creativity and innovation.",
+        "UDDHESHYA GROUP was founded with a vision to transform digital marketing through creativity and innovation.",
     },
     {
       year: "May",
