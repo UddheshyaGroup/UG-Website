@@ -169,13 +169,13 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  Banepa, Kavrepalanchok{" "}
+                  Sanepa, Lalitpur{" "}
                 </span>
               </li>
-              <a href="tel:+9779860471053">
+              <a href="tel:+9779805533602">
                 <li className="flex items-center mt-3">
                   <Phone className="h-5 w-5 mr-2 text-primary" />
-                  <span className="text-muted-foreground">+977 9860471053</span>
+                  <span className="text-muted-foreground">+977 9805533602</span>
                 </li>
               </a>
               <a href="mailto:uddheshyastudio@gmail.com">
@@ -193,7 +193,7 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} UDDHESHYA STUDIO. All rights
+              © {new Date().getFullYear()} UDDHESHYA GROUP. All rights
               reserved.
             </p>
             <div className="flex space-x-6">

@@ -7,7 +7,7 @@ export default function ContactInfo() {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Address",
-      details: ["Banepa, Kavrepalanchok", "Office Headquarter"],
+      details: ["Sanepa, Lalitpur", "Office Location"],
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
