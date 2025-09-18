@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
+import Link from "next/link";
 import AnimatedStats from "./animated-stats";
 
 export default function HeroSection() {
@@ -49,7 +50,6 @@ export default function HeroSection() {
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 animate-pulse-slow"></div>
           <div
             className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-tertiary/10 via-transparent to-primary/10 animate-pulse-slow"
-            style={{ animationDelay: "1s" }}
           ></div>
         </div>
 
@@ -134,7 +134,7 @@ export default function HeroSection() {
                 }}
               >
                 <Sparkles className="w-4 h-4 mr-2" />
-                Welcome to UDDHESHYA GROUP
+                Best Digital Marketing Platform in Nepal
               </motion.span>
             </motion.div>
             <motion.h1
@@ -172,7 +172,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="flex items-center space-x-4 mb-8"
+              className="flex items-center space-x-4 mb-6"
             >
               <motion.div
                 className="w-12 h-0.5 bg-gradient-to-r from-primary to-secondary"
@@ -184,6 +184,15 @@ export default function HeroSection() {
                 Innovation • Creativity • Results
               </span>
             </motion.div>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
+              className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl"
+            >
+              Uddheshya Group is the <Link href="/best-digital-marketing-platform-nepal" className="text-primary hover:underline font-semibold">best digital marketing platform in Nepal</Link>, helping businesses in Kathmandu, Banepa, and across the country grow via SEO, social media marketing, branding, web development, and comprehensive digital strategies.
+            </motion.p>
             {/* Premium stats
 <<<<<<< HEAD
               <motion.div

@@ -5,9 +5,10 @@ import PortfolioGrid from "@/components/portfolio-grid";
 import PortfolioHero from "@/components/portfolio-hero";
 
 export const metadata: Metadata = {
-  title: "Portfolio | UDDHESHYA GROUP",
+  title: "Portfolio – Digital Marketing Success Stories in Nepal | UDDHESHYA GROUP",
   description:
-    "Explore our portfolio of successful marketing campaigns and projects.",
+    "Explore our portfolio of successful digital marketing campaigns and projects for businesses in Nepal. See how we've helped Nepali companies grow with SEO, social media marketing, and web development.",
+  keywords: "digital marketing portfolio Nepal, marketing success stories Nepal, SEO case studies Kathmandu, social media campaigns Nepal, web development projects Nepal, marketing agency portfolio Nepal",
 };
 
 export default function PortfolioPage() {

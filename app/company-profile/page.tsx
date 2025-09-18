@@ -5,7 +5,7 @@ import ClientLogos from "@/components/client-logos"
 
 export const metadata: Metadata = {
   title: "Company Profile | UDDHESHYA GROUP",
-  description: "Explore UDDHESHYA GROUP's company profile, achievements, and vision for the future of marketing.",
+  description: "Uddheshya Group is the best digital marketing platform in Nepal, offering SEO, social media marketing, branding, and more.",
 }
 
 export default function CompanyProfilePage() {
@@ -15,10 +15,12 @@ export default function CompanyProfilePage() {
         Company Profile
       </h1>
       <div className="prose prose-lg dark:prose-invert max-w-none mb-16">
-        <p className="text-xl text-center max-w-3xl mx-auto">
-          UDDHESHYA GROUP is a forward-thinking marketing agency that combines creativity, data-driven strategies, and
-          cutting-edge technology to deliver exceptional results for our clients.
-        </p>
+        <section>
+          <h1>Redefining Marketing for the Digital Age</h1>
+          <p className="text-xl text-center max-w-3xl mx-auto">
+          Uddheshya Group is the best digital marketing platform in Nepal, helping businesses in Kathmandu, Banepa, and across the country grow via SEO, social media marketing, branding, and more.
+          </p>
+        </section>
       </div>
       <CompanyStats />
       <CompanyVision />

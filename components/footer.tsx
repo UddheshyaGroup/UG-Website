@@ -84,6 +84,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/best-digital-marketing-platform-nepal"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Best Digital Marketing Platform Nepal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about-us"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
@@ -169,7 +185,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
                 <span className="text-muted-foreground">
-                  Sanepa, Lalitpur{" "}
+                  Sanepa, Lalitpur, Bagmati Province, Nepal
                 </span>
               </li>
               <a href="tel:+9779805533602">

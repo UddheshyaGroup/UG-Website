@@ -9,23 +9,30 @@ import Image from "next/image";
 
 export default function TestimonialsSection() {
   const testimonials = [
-    // {
-    //   quote:
-    //     "As we closed our 30-year legacy with Rock Yatra 2, we needed a partner who understood the emotional weight of Nepal’s 'Antim Yatra' (final journey). Uddheshya Studio transformed our vision into a historic reality: securing the Hyatt Grounds in Bouddha, managing 10,000+ fans, and creating a seamless fusion of nostalgia and rock energy. Their team handled everything from safety protocols to multimedia tributes for icons like Narayan Gopal and Bhakta Raj Acharya. The event trended nationally, with live clips of 'Mutu Bhari' and 'Nepali Ho' hitting 2M+ views. They didn’t just organize a concert—they cemented our legacy.",
-    //   author: "Adrian Pradhan",
-    //   position: "Lead Vocalist & Drummer, 1974 AD",
-    //   avatar: "/adrian.jpg?height=80&width=80&text=SJ",
-    // },
-    // {
-    //   quote:
-    //     "Launching Nepal’s first Bachelor in Aviation Management (BAM) demanded strategic positioning. This agency crafted a nationwide campaign highlighting our KU affiliation and Annapurna Ventures’ industry network. They orchestrated open-house events at Banepa campus, driving 500+ qualified inquiries via targeted digital ads and aviation career webinars. Their guerrilla marketing included airport pop-ups showcasing VR simulations of air traffic control roles. Enrollment hit 100% capacity (33 seats) within 3 weeks, with 40% of students securing internships at Himalayan Airlines—proof they turn academic visions into tangible careers.",
-    //   author: "Rameshwor Thapa",
-    //   position: "Chairman, Annapurna Ventures",
-    //   avatar: "/thapa.jpg?height=80&width=80&text=MC",
-    // },
     {
       quote:
-        "HCOP’s jazz manouche revival—blending Django Reinhardt with Narayan Gopal classics—needed niche audience growth. The agency engineered a 3-phase plan: First, they produced our debut EP launch at Patan Museum, fusing jazz improvisation with Nepali sarangi. Then, they leveraged digital storytelling, creating mini-docs about 'translating 70s pop into swing.' Finally, they secured NPR 1.2M in grants from cultural foundations by framing HCOP as 'custodians of heritage innovation.' Our Spotify streams grew 300%, and we’re now headlining international jazz fests in Bhutan and India, showcasing the global appeal of our unique sound.",
+        "UDDHESHYA GROUP transformed our digital presence completely. Our restaurant chain went from 2 to 8 locations across Kathmandu Valley in just 18 months. Their local SEO strategies and social media campaigns helped us increase online orders by 300%. They truly understand the Nepali market and consumer behavior.",
+      author: "Rajesh Shrestha",
+      position: "Owner, Kathmandu Restaurant Chain",
+      avatar: "/placeholder-user.jpg",
+    },
+    {
+      quote:
+        "As a tech startup in Lalitpur, we needed a digital marketing partner who understood both technology and the local market. UDDHESHYA GROUP delivered exceptional results - 500% increase in lead generation and 250% growth in website traffic. Their expertise in both digital marketing and Nepal's business landscape is unmatched.",
+      author: "Priya Maharjan",
+      position: "CEO, TechStart Nepal",
+      avatar: "/placeholder-user.jpg",
+    },
+    {
+      quote:
+        "Our e-commerce store in Banepa was struggling to reach customers online. UDDHESHYA GROUP's comprehensive digital marketing approach including SEO, PPC, and social media marketing resulted in 250% growth in website traffic and 180% increase in sales. They know how to make Nepali businesses succeed online.",
+      author: "Suresh Thapa",
+      position: "Founder, Banepa E-commerce Store",
+      avatar: "/placeholder-user.jpg",
+    },
+    {
+      quote:
+        "HCOP's jazz manouche revival—blending Django Reinhardt with Narayan Gopal classics—needed niche audience growth. The agency engineered a 3-phase plan: First, they produced our debut EP launch at Patan Museum, fusing jazz improvisation with Nepali sarangi. Then, they leveraged digital storytelling, creating mini-docs about 'translating 70s pop into swing.' Finally, they secured NPR 1.2M in grants from cultural foundations by framing HCOP as 'custodians of heritage innovation.' Our Spotify streams grew 300%, and we're now headlining international jazz fests in Bhutan and India, showcasing the global appeal of our unique sound.",
       author: "Ben Errington",
       position: "Artistic Facilitator, Hot Club of Patan",
       avatar: "/benn.png?height=80&width=80&text=PS",

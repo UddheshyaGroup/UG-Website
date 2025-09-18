@@ -4,6 +4,8 @@ import ClientsSection from "@/components/clients-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import CtaSection from "@/components/cta-section";
 import VideoSection from "@/components/VideoSection";
+import TrustBadges from "@/components/trust-badges";
+import CaseStudies from "@/components/case-studies";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
 
       <HeroSection />
       <FeaturedServices />
+      <TrustBadges />
+      <CaseStudies />
       {/* <ClientsSection /> */}
       <TestimonialsSection />
       <CtaSection />

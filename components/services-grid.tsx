@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   Megaphone,
   LineChart,
@@ -126,17 +127,22 @@ export default function ServicesGrid() {
     >
       {services.map((service, index) => (
         <motion.div key={index} variants={itemVariants}>
-          <Card className="hover-card h-full">
-            <CardHeader>
-              <div className="mb-4">{service.icon}</div>
-              <CardTitle className="text-xl">{service.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-base">
-                {service.description}
-              </CardDescription>
-            </CardContent>
-          </Card>
+          <Link href="/best-digital-marketing-platform-nepal" className="block h-full">
+            <Card className="hover-card h-full hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="mb-4">{service.icon}</div>
+                <CardTitle className="text-xl">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base">
+                  {service.description}
+                </CardDescription>
+                <div className="mt-4 text-sm text-primary font-medium">
+                  Learn more about our {service.title.toLowerCase()} services in Nepal →
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
         </motion.div>
       ))}
     </motion.div>

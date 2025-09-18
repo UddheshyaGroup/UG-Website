@@ -5,8 +5,9 @@ import ValuesSection from "@/components/values-section"
 import TimelineSection from "@/components/timeline-section"
 
 export const metadata: Metadata = {
-  title: "About Us | UDDHESHYA GROUP",
-  description: "Learn about UDDHESHYA GROUP's journey, mission, values, and the team behind our success.",
+  title: "About UDDHESHYA GROUP – Leading Digital Marketing Agency in Nepal | Our Story & Mission",
+  description: "Learn about UDDHESHYA GROUP's journey as Nepal's leading digital marketing agency. Discover our mission, values, and the team behind our success in helping Nepali businesses grow through innovative marketing solutions.",
+  keywords: "about UDDHESHYA GROUP, digital marketing agency Nepal, marketing team Kathmandu, company story Nepal, leading marketing firm Nepal, Nepali digital agency, marketing company history Nepal",
 }
 
 export default function AboutPage() {

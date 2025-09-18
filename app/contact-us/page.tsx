@@ -4,9 +4,10 @@ import ContactInfo from "@/components/contact-info";
 import Map from "@/components/map";
 
 export const metadata: Metadata = {
-  title: "Contact Us | UDDHESHYA GROUP",
+  title: "Contact UDDHESHYA GROUP – Best Digital Marketing Agency in Nepal | Get Quote Today",
   description:
-    "Get in touch with UDDHESHYA GROUP for innovative marketing solutions tailored to your business needs.",
+    "Contact UDDHESHYA GROUP, Nepal's leading digital marketing agency in Kathmandu. Get a free quote for SEO, social media marketing, web development, and digital advertising services for your business in Nepal.",
+  keywords: "contact UDDHESHYA GROUP, digital marketing agency Nepal contact, marketing services quote Nepal, SEO consultation Kathmandu, digital marketing inquiry Nepal, marketing agency contact Nepal",
 };
 
 export default function ContactPage() {
