@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
       <motion.div
         className="text-left"
         initial={{ opacity: 0, y: 20 }}
@@ -27,18 +27,19 @@ export default function AboutHero() {
       </motion.div>
 
       <motion.div
-        className="relative h-[400px] rounded-lg overflow-hidden"
-        initial={{ opacity: 0, scale: 0.9 }}
+        className="relative h-auto aspect-[16/10] rounded-xl overflow-hidden shadow-lg ring-1 ring-primary/10 bg-white p-4 md:p-6"
+        initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Our+Team"
+          src="/image.png"
           alt="UDDHESHYA STUDIO team"
           fill
-          className="object-cover"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          priority
+          className="object-contain object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
       </motion.div>
     </div>
   );

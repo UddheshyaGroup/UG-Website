@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
 import Link from "next/link";
 import AnimatedStats from "./animated-stats";
@@ -10,23 +10,39 @@ export default function HeroSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [enableEffects, setEnableEffects] = useState(true);
+  const prefersReduced = useReducedMotion();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.92]);
 
   useEffect(() => {
+    // Enable heavy effects only on larger screens with precise pointers
+    const mq = window.matchMedia("(min-width: 1024px) and (pointer: fine)");
+    const update = () => setEnableEffects(mq.matches && !prefersReduced);
+    update();
+    mq.addEventListener("change", update);
+
+    let raf = 0;
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+      if (!enableEffects) return;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        setMousePosition({ x: e.clientX, y: e.clientY });
+      });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
+    return () => {
+      mq.removeEventListener("change", update);
+      window.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(raf);
+    };
+  }, [enableEffects, prefersReduced]);
 
   const scrollToNextSection = () => {
     if (scrollRef.current) {
@@ -40,7 +56,7 @@ export default function HeroSection() {
   return (
     <motion.section
       ref={containerRef}
-      style={{ y, opacity }}
+      style={{ opacity }}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-tertiary/5"
     >
       {/* Premium Background Effects */}
@@ -54,14 +70,16 @@ export default function HeroSection() {
         </div>
 
         {/* Interactive mouse follower */}
-        <motion.div
-          className="absolute w-96 h-96 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-full filter blur-3xl"
-          animate={{
-            x: mousePosition.x - 192,
-            y: mousePosition.y - 192,
-          }}
-          transition={{ type: "spring", damping: 30, stiffness: 200 }}
-        />
+        {enableEffects && (
+          <motion.div
+            className="absolute w-96 h-96 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-full filter blur-3xl will-change-transform pointer-events-none"
+            animate={{
+              x: mousePosition.x - 192,
+              y: mousePosition.y - 192,
+            }}
+            transition={{ type: "spring", damping: 40, stiffness: 120 }}
+          />
+        )}
       </div>
 
       {/* Enhanced geometric shapes */}
@@ -86,7 +104,7 @@ export default function HeroSection() {
 
       {/* Premium floating particles */}
       <div className="absolute inset-0">
-        {[...Array(30)].map((_, i) => (
+        {[...Array(enableEffects ? 14 : 6)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute"
@@ -100,7 +118,7 @@ export default function HeroSection() {
               scale: [0.5, 1, 0.5],
             }}
             transition={{
-              duration: 4 + Math.random() * 3,
+              duration: 5 + Math.random() * 3,
               repeat: Number.POSITIVE_INFINITY,
               delay: Math.random() * 3,
               ease: "easeInOut",
@@ -256,12 +274,12 @@ export default function HeroSection() {
             <div className="relative w-full h-[500px] lg:h-[600px]">
               {/* Premium central animation */}
               <motion.div
-                className="absolute inset-0 flex items-center justify-center"
+                className="absolute inset-0 flex items-center justify-center will-change-transform"
                 animate={{
                   y: [0, -15, 0],
                 }}
                 transition={{
-                  duration: 5,
+                  duration: 6,
                   repeat: Number.POSITIVE_INFINITY,
                   ease: "easeInOut",
                 }}
@@ -272,7 +290,7 @@ export default function HeroSection() {
                     className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-tertiary rounded-full opacity-20"
                     animate={{ rotate: 360 }}
                     transition={{
-                      duration: 20,
+                      duration: 24,
                       repeat: Number.POSITIVE_INFINITY,
                       ease: "linear",
                     }}
@@ -281,7 +299,7 @@ export default function HeroSection() {
                     className="absolute inset-4 bg-gradient-to-tr from-secondary via-tertiary to-primary rounded-full opacity-30"
                     animate={{ rotate: -360 }}
                     transition={{
-                      duration: 25,
+                      duration: 28,
                       repeat: Number.POSITIVE_INFINITY,
                       ease: "linear",
                     }}
@@ -290,7 +308,7 @@ export default function HeroSection() {
                     className="absolute inset-8 bg-gradient-to-bl from-tertiary via-primary to-secondary rounded-full opacity-40"
                     animate={{ rotate: 360 }}
                     transition={{
-                      duration: 30,
+                      duration: 32,
                       repeat: Number.POSITIVE_INFINITY,
                       ease: "linear",
                     }}

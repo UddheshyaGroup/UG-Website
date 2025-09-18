@@ -32,14 +32,15 @@ export default function ContactInfo() {
 
   return (
     <Card>
-      <div className="relative h-48 w-full">
+      <div className="relative h-48 md:h-56 w-full bg-white rounded-t-lg p-4">
         <Image
-          src="/placeholder.svg?height=400&width=800&text=Contact+Us"
+          src="/image.png"
           alt="Contact Us"
           fill
-          className="object-cover rounded-t-lg"
+          className="object-contain rounded-t-lg"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/30"></div>
       </div>
       <CardContent className="p-6">
         <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
