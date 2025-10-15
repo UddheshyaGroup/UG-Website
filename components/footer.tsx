@@ -8,6 +8,7 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -51,6 +52,10 @@ export default function Footer() {
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="https://www.tiktok.com/@uddheshya.group?_t=ZS-90Z9fzHQBlP&_r=1" className="text-muted-foreground hover:text-primary transition-colors">
+                <FaTiktok className="h-5 w-5" />
+                <span className="sr-only">TikTok</span>
               </Link>
             </div>
           </div>
@@ -188,20 +193,20 @@ export default function Footer() {
                   Sanepa, Lalitpur, Bagmati Province, Nepal
                 </span>
               </li>
-              <a href="tel:+9779805533602">
-                <li className="flex items-center mt-3">
+              <li className="flex items-center">
+                <a href="tel:+9779805533602" className="flex items-center">
                   <Phone className="h-5 w-5 mr-2 text-primary" />
                   <span className="text-muted-foreground">+977 9805533602</span>
-                </li>
-              </a>
-              <a href="mailto:uddheshyastudio@gmail.com">
-                <li className="flex items-center mt-3">
+                </a>
+              </li>
+              <li className="flex items-center">
+                <a href="mailto:uddheshyastudio@gmail.com" className="flex items-center">
                   <Mail className="h-5 w-5 mr-2 text-primary" />
                   <span className="text-muted-foreground">
                     uddheshyastudio@gmail.com{" "}
                   </span>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

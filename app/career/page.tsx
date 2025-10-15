@@ -19,23 +19,8 @@ import {
 
 export default function CareersPage() {
   const jobOpenings = [
-<<<<<<< HEAD
-    /*{
-      title: "Creative Head",
-      department: "Creative",
-      location: "On-site",
-      type: "Contract",
-      experience: "3+ years",
-      description:
-        "Lead and oversee creative direction, managing a team of designers and content creators.",
-      openings: 1,
-    },*/
-    {
-      title: "Researcher",
-=======
     {
       title: "Research Intern",
->>>>>>> 44e751533c7d5583d8f983fab6c5e0764dfe2519
       department: "Research",
       location: "On-site",
       type: "Probation",

@@ -11,6 +11,8 @@ export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [enableEffects, setEnableEffects] = useState(true);
+  const [isClient, setIsClient] = useState(false);
+  const [particlePositions, setParticlePositions] = useState<Array<{left: number, top: number}>>([]);
   const prefersReduced = useReducedMotion();
 
   const { scrollYProgress } = useScroll({
@@ -21,6 +23,16 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.92]);
 
   useEffect(() => {
+    // Set client-side flag and generate particle positions
+    setIsClient(true);
+    
+    // Generate stable particle positions on client-side only
+    const positions = Array.from({ length: enableEffects ? 14 : 6 }, () => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+    }));
+    setParticlePositions(positions);
+
     // Enable heavy effects only on larger screens with precise pointers
     const mq = window.matchMedia("(min-width: 1024px) and (pointer: fine)");
     const update = () => setEnableEffects(mq.matches && !prefersReduced);
@@ -104,13 +116,13 @@ export default function HeroSection() {
 
       {/* Premium floating particles */}
       <div className="absolute inset-0">
-        {[...Array(enableEffects ? 14 : 6)].map((_, i) => (
+        {isClient && particlePositions.map((position: {left: number, top: number}, i: number) => (
           <motion.div
             key={i}
             className="absolute"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${position.left}%`,
+              top: `${position.top}%`,
             }}
             animate={{
               y: [0, -50, 0],
@@ -211,32 +223,7 @@ export default function HeroSection() {
             >
               Uddheshya Group is the <Link href="/best-digital-marketing-platform-nepal" className="text-primary hover:underline font-semibold">best digital marketing platform in Nepal</Link>, helping businesses in Kathmandu, Banepa, and across the country grow via SEO, social media marketing, branding, web development, and comprehensive digital strategies.
             </motion.p>
-            {/* Premium stats
-<<<<<<< HEAD
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="grid grid-cols-3 gap-6 mb-8"
-              >
-                {[
-                  { number: "40+", label: "Projects" },
-                  { number: "20+", label: "Clients" },
-                  { number: "10+", label: "Services" },
-                ].map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    className="text-center"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <div className="text-2xl font-bold text-primary">
-                      {stat.number}
-                    </div>
-                    <div className="text-sm text-tertiary">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div> */}
+            {/* Premium stats */}
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
