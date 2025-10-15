@@ -40,7 +40,7 @@ export default function PortfolioGrid() {
     // },
     {
       id: 2,
-      title: "SVI- Undergrad Program",
+      title: "Siddhartha Vanasthali Institute (SVI)",
       category: "Education",
       image: "/BAM.jpeg?height=600&width=800&text=EcoLife+E-commerce",
       tags: ["Aviation", "Kathmandu University"],
@@ -83,7 +83,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 6,
-      title: "NAAV",
+      title: "Nepal Adarsha Awasiya Vidyalaya (NAAV)",
       category: "Education",
       image: "/NAAV.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["Management", "Computer Science"],

@@ -19,7 +19,7 @@ import {
 
 export default function CareersPage() {
   const jobOpenings = [
-    {
+    /*{
       title: "Creative Head",
       department: "Creative",
       location: "On-site",
@@ -28,7 +28,7 @@ export default function CareersPage() {
       description:
         "Lead and oversee creative direction, managing a team of designers and content creators.",
       openings: 1,
-    },
+    },*/
     {
       title: "Researcher",
       department: "Research",
