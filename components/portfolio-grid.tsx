@@ -127,7 +127,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 10,
-      title: "GATE College",
+      title: "Global Academy of Tourism and Hospitality Education (GATE) College",
       category: "Education",
       image: "/gate.jpg?height=600&width=800&text=Urban+Styles",
       tags: ["BIHM", "BHM", "BPH"],
