@@ -19,6 +19,7 @@ import {
 
 export default function CareersPage() {
   const jobOpenings = [
+<<<<<<< HEAD
     /*{
       title: "Creative Head",
       department: "Creative",
@@ -31,43 +32,27 @@ export default function CareersPage() {
     },*/
     {
       title: "Researcher",
+=======
+    {
+      title: "Research Intern",
+>>>>>>> 44e751533c7d5583d8f983fab6c5e0764dfe2519
       department: "Research",
       location: "On-site",
       type: "Probation",
-      experience: "Any",
+      experience: "Entry Level",
       description:
         "Support research projects and contribute to content development through investigation and analysis.",
-      openings: 2,
-    },
-    {
-      title: "Graphic Designer (Static)",
-      department: "Design",
-      location: "On-site",
-      type: "Probation",
-      experience: "1-2 years",
-      description:
-        "Create compelling static visual content for digital and print use.",
-      openings: 3,
-    },
-    {
-      title: "Videographer",
-      department: "Production",
-      location: "On-site",
-      type: "Contract",
-      experience: "1+ year",
-      description:
-        "Capture high-quality footage and contribute to video storytelling.",
       openings: 1,
     },
     {
-      title: "Video Editor",
-      department: "Post-Production",
+      title: "Graphic Designer / Motion Graphics",
+      department: "Design",
       location: "On-site",
-      type: "Probation",
-      experience: "1-2 years",
+      type: "Full-time",
+      experience: "2 years",
       description:
-        "Edit video content for various platforms using modern tools and creative cuts.",
-      openings: 2,
+        "Create compelling static visual content for digital and print use.",
+      openings: 3,
     },
   ];
 
@@ -77,7 +62,7 @@ export default function CareersPage() {
       title: "Health & Wellness",
       description: "Comprehensive health insurance and wellness programs",
     },
-    {
+    { 
       icon: <Zap className="h-6 w-6" />,
       title: "Flexible Work",
       description: "Remote-first culture with flexible working hours",
