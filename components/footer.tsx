@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiTiktok } from "react-icons/si";
 import {
   Facebook,
   Instagram,
@@ -6,7 +7,7 @@ import {
   Mail,
   MapPin,
   Phone,
-  Twitter,
+  Youtube,
 } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 
@@ -31,15 +32,17 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              {/* <Link
-                href="#"
+              <Link
+                href="https://www.tiktok.com/@uddheshya.group"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link> */}
+                <SiTiktok className="h-5 w-5" />
+                <span className="sr-only">TikTok</span>
+              </Link>
               <Link
-                href="https://www.instagram.com/studio.uddheshya?igsh=dndzZ2hxdGltaHlu"
+                href="https://www.instagram.com/uddheshya.group/"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 target="_blank"
               >
@@ -53,9 +56,12 @@ export default function Footer() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://www.tiktok.com/@uddheshya.group?_t=ZS-90Z9fzHQBlP&_r=1" className="text-muted-foreground hover:text-primary transition-colors">
-                <FaTiktok className="h-5 w-5" />
-                <span className="sr-only">TikTok</span>
+              <Link
+                href="https://www.youtube.com/@UddheshyaGroup"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">Youtube</span>
               </Link>
             </div>
           </div>
@@ -119,7 +125,7 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-{/*               <li>
+              {/*               <li>
                 <Link
                   href="/company-profile"
                   className="text-muted-foreground hover:text-primary transition-colors"
