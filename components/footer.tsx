@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SiTiktok } from "react-icons/si";
 import {
   Facebook,
   Instagram,
@@ -8,8 +7,8 @@ import {
   MapPin,
   Phone,
   Youtube,
+  Music,
 } from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -38,7 +37,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <SiTiktok className="h-5 w-5" />
+                <Music className="h-5 w-5" />
                 <span className="sr-only">TikTok</span>
               </Link>
               <Link
