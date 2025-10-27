@@ -36,22 +36,31 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                {/* Use a stroke-based music-note SVG so it matches lucide-react icon layout (stroke, currentColor) */}
+                {/* Inline TikTok-styled logo (multi-layer) sized to match other icons */}
                 <svg
                   className="h-5 w-5"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
                 >
-                  {/* music note (lucide-style) */}
-                  <path d="M9 18V5l10-2v13" />
-                  <circle cx="6" cy="18" r="3" />
+                  {/* cyan layer (slightly offset) */}
+                  <path
+                    d="M15.6 2.2v5.3c-.7 0-1.3-.1-2-.4-.7-.3-1.3-.8-1.7-1.4v8.1c0 1.9-1.5 3.5-3.4 3.9-1.2.3-2.5.1-3.5-.6 1.1.6 2.4.9 3.7.5 1.7-.5 2.9-2 2.9-3.7V8.6c1.5 1.4 3.4 2.4 5.5 2.6V2.2h-0.5z"
+                    fill="#25F4EE"
+                    transform="translate(.2,0)"
+                  />
+                  {/* pink layer (slightly offset opposite) */}
+                  <path
+                    d="M15.6 2.2v5.1c-.7 0-1.3-.1-2-.4-.7-.3-1.3-.8-1.7-1.4v7.9c0 1.9-1.5 3.5-3.4 3.9-1.2.3-2.5.1-3.5-.6 1.1.6 2.4.9 3.7.5 1.7-.5 2.9-2 2.9-3.7V8.6c1.5 1.4 3.4 2.4 5.5 2.6V2.2h-0.5z"
+                    fill="#FE2C55"
+                    transform="translate(-.2,0)"
+                  />
+                  {/* main black glyph */}
+                  <path
+                    d="M14.6 2.8v5.7c-1.1-.1-2.1-.5-3-.9v6.1c0 1.6-1 3-2.5 3.6-1.7.7-3.6.1-4.8-1.4 1.2.7 2.6 1 4.1.5 1.6-.6 2.6-2.1 2.6-3.8V8.1c1.6 1.5 3.6 2.5 5.8 2.7V2.8h-2.8z"
+                    fill="#010101"
+                  />
                 </svg>
                 <span className="sr-only">TikTok</span>
               </Link>
