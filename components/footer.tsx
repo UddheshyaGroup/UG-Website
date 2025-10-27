@@ -37,13 +37,24 @@ export default function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 {/* Use provided icon image placed at /public/tiktok.png so it displays exactly as provided */}
-                <img
-                  src="/tiktok.svg"
-                  alt="TikTok"
-                  className="h-5 w-5 inline-block"
-                  width={20}
-                  height={20}
-                />
+                {/* TikTok glyph styled like lucide icons (stroke-based, currentColor) */}
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  {/* main note stem with slight curve to resemble the TikTok glyph */}
+                  <path d="M16 3v6.2c-1.2-.3-2.3-.8-3.2-1.6v8.1c0 1.8-1.3 3.3-3 3.7-1.3.3-2.7-.1-3.7-1 1 0 2.1.3 3 .1 1.4-.3 2.4-1.5 2.4-2.9V8.8c1.5 1.3 3.3 2.3 5.2 2.5V3z" />
+                  {/* note head */}
+                  <circle cx="6.5" cy="17.5" r="2.5" />
+                </svg>
                 <span className="sr-only">TikTok</span>
               </Link>
               <Link
