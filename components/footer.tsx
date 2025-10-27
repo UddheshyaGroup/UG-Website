@@ -38,7 +38,7 @@ export default function Footer() {
               >
                 {/* Use provided icon image placed at /public/tiktok.png so it displays exactly as provided */}
                 <img
-                  src="/tiktok.png"
+                  src="/tiktok.svg"
                   alt="TikTok"
                   className="h-5 w-5 inline-block"
                   width={20}
