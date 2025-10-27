@@ -7,7 +7,6 @@ import {
   MapPin,
   Phone,
   Youtube,
-  Music,
 } from "lucide-react";
 
 export default function Footer() {
@@ -37,7 +36,31 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Music className="h-5 w-5" />
+                {/* Inline TikTok-like icon to avoid extra dependency and match desired logo */}
+                <svg
+                  className="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-hidden="true"
+                >
+                  {/* teal shadow */}
+                  <path
+                    d="M15.5 2.5v5.3c-.8 0-1.6-.1-2.4-.5-.8-.4-1.5-1-2-1.9V16c0 2.2-1.8 4-4 4-1.4 0-2.6-.7-3.3-1.8 1.3 1 3 1.3 4.6.6 1.6-.7 2.7-2.3 2.7-4.1V8.9c1.2 1.1 2.8 1.8 4.5 1.9V4.1h-1.4z"
+                    fill="#69C9D0"
+                  />
+                  {/* pink shadow, slightly offset */}
+                  <path
+                    d="M15.5 2.5v4.9c-.8 0-1.6-.1-2.4-.5-.8-.4-1.5-1-2-1.9V15.6c0 2.2-1.8 4-4 4-1.4 0-2.6-.7-3.3-1.8 1.3 1 3 1.3 4.6.6 1.6-.7 2.7-2.3 2.7-4.1V8.9c1.2 1.1 2.8 1.8 4.5 1.9V4.1h-1.4z"
+                    fill="#EE1D52"
+                    opacity="0.95"
+                  />
+                  {/* black main glyph on top */}
+                  <path
+                    d="M14.6 3.1v6.1c-1.1-.1-2.2-.5-3.1-1.2v6.3c0 1.6-1 3-2.5 3.6-1.7.7-3.6.1-4.8-1.4 1.2.7 2.6 1 4.1.5 1.6-.6 2.6-2.1 2.6-3.8V8.2c1.6 1.5 3.6 2.5 5.8 2.7V3.1h-2.1z"
+                    fill="#010101"
+                  />
+                </svg>
                 <span className="sr-only">TikTok</span>
               </Link>
               <Link
